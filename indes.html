@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>Transform Your Space - Professional Painting Services</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional painting services that transform your space. Quality painters for home transformation. Every wall has a story. Let's paint yours.">
+    <meta name="keywords" content="professional painting services, home transformation, quality painters, interior painting, exterior painting">
+    <meta name="author" content="Transform Your Space">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Transform Your Space Painting Services",
+      "description": "Professional painting services that transform your home or office space.",
+      "url": "https://example.com",
+      "telephone": "+1234567890",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Art Street",
+        "addressLocality": "Creative City",
+        "addressRegion": "CA",
+        "postalCode": "90210",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "serviceType": "Painting Services"
+    }
+    </script>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ScrollMagic for scroll effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="paint-loader">
+            <div class="paint-progress"></div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Transform</div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#journey">Our Journey</a></li>
+            <li><a href="#craft">The Craft</a></li>
+            <li><a href="#palette">Palette & Inspiration</a></li>
+            <li><a href="#testimonials">Voices</a></li>
+            <li><a href="#your-space">Your Space</a></li>
+            <li><a href="#invitation">Get Started</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-headline" id="heroHeadline">
+                <span>Every wall has a story.</span><br>
+                <span>Together, we'll paint yours.</span>
+                <div class="paint-stroke" id="paintStroke"></div>
+            </h1>
+            <p class="hero-subtitle">Transforming spaces with artistry, precision, and passion for over a decade.</p>
+            <div class="hero-cta">
+                <a href="#your-space" class="btn">Start Your Journey</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+    
+    <!-- Our Journey Section -->
+    <section class="section journey" id="journey">
+        <div class="container">
+            <h2 class="section-title">Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2010</div>
+                        <h3 class="timeline-title">The Beginning</h3>
+                        <img src="https://picsum.photos/seed/founder-start/400/300.jpg" alt="Founder starting the business" class="timeline-image">
+                        <p>With a single brush and a vision, our founder began transforming spaces one wall at a time.</p>
+                        <div class="scratch-off">
+                            <img src="https://picsum.photos/seed/first-project/400/300.jpg" alt="First project transformation">
+                            <div class="scratch-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2014</div>
+                        <h3 class="timeline-title">Growing Team</h3>
+                        <img src="https://picsum.photos/seed/team-growth/400/300.jpg" alt="Team growth" class="timeline-image">
+                        <p>Our passion attracted talented artists who shared our commitment to quality and craftsmanship.</p>
+                        <div class="scratch-off">
+                            <img src="https://picsum.photos/seed/team-office/400/300.jpg" alt="Team office">
+                            <div class="scratch-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018</div>
+                        <h3 class="timeline-title">Innovation</h3>
+                        <img src="https://picsum.photos/seed/innovation/400/300.jpg" alt="Innovation in painting" class="timeline-image">
+                        <p>We pioneered eco-friendly techniques and materials that set new industry standards.</p>
+                        <div class="scratch-off">
+                            <img src="https://picsum.photos/seed/eco-paint/400/300.jpg" alt="Eco-friendly paint">
+                            <div class="scratch-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3 class="timeline-title">Today</h3>
+                        <img src="https://picsum.photos/seed/today-team/400/300.jpg" alt="Current team" class="timeline-image">
+                        <p>Now a team of 30+ artists, we continue to transform spaces and create stories on walls across the city.</p>
+                        <div class="scratch-off">
+                            <img src="https://picsum.photos/seed/showroom/400/300.jpg" alt="Current showroom">
+                            <div class="scratch-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- The Craft Section -->
+    <section class="section craft" id="craft">
+        <div class="container">
+            <h2 class="section-title">The Craft</h2>
+            <div class="craft-intro">
+                <p>Our process is a meticulous dance of preparation, artistry, and precision. Each step is essential to creating a finish that not only looks beautiful but lasts for years to come.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="process-image">
+                        <img src="https://picsum.photos/seed/preparation/600/400.jpg" alt="Wall preparation">
+                        <div class="process-hotspot" data-tooltip="Proper preparation is 80% of the job">1</div>
+                        <div class="process-hotspot" data-tooltip="We repair all imperfections before painting" style="top: 60%; left: 70%;">2</div>
+                        <div class="hotspot-tooltip"></div>
+                    </div>
+                    <div class="process-content">
+                        <h3>Preparation</h3>
+                        <p>The foundation of every masterpiece. We meticulously prepare surfaces, repair imperfections, and protect your space to ensure flawless results.</p>
+                        <p>Our preparation process includes thorough cleaning, sanding, patching, and priming to create the perfect canvas for color.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-image">
+                        <img src="https://picsum.photos/seed/priming/600/400.jpg" alt="Wall priming">
+                        <div class="process-hotspot" data-tooltip="Quality primers ensure better adhesion and color vibrancy">1</div>
+                        <div class="process-hotspot" data-tooltip="We use eco-friendly, low-VOC primers" style="top: 40%; left: 30%;">2</div>
+                        <div class="hotspot-tooltip"></div>
+                    </div>
+                    <div class="process-content">
+                        <h3>Priming</h3>
+                        <p>The essential first coat that bonds with your surface and creates the perfect foundation for your chosen color.</p>
+                        <p>Our premium primers enhance paint adhesion, increase durability, and ensure true color representation for a finish that lasts.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-image">
+                        <img src="https://picsum.photos/seed/painting/600/400.jpg" alt="Painting process">
+                        <div class="process-hotspot" data-tooltip="We apply multiple coats for even coverage and depth">1</div>
+                        <div class="process-hotspot" data-tooltip="Our artists use specialized techniques for different finishes" style="top: 70%; left: 60%;">2</div>
+                        <div class="hotspot-tooltip"></div>
+                    </div>
+                    <div class="process-content">
+                        <h3>Painting</h3>
+                        <p>Where artistry meets precision. Our skilled painters apply color with expert technique, ensuring even coverage and perfect edges.</p>
+                        <p>We use premium paints and specialized tools to create a flawless finish that brings your vision to life.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-image">
+                        <img src="https://picsum.photos/seed/finishing/600/400.jpg" alt="Final finishing touches">
+                        <div class="process-hotspot" data-tooltip="Attention to detail in the final phase makes all the difference">1</div>
+                        <div class="process-hotspot" data-tooltip="We conduct thorough inspections before completing the project" style="top: 30%; left: 50%;">2</div>
+                        <div class="hotspot-tooltip"></div>
+                    </div>
+                    <div class="process-content">
+                        <h3>Finishing</h3>
+                        <p>The final touches that elevate your space from simply painted to truly transformed.</p>
+                        <p>We carefully inspect every inch, make necessary touch-ups, and ensure your space is left immaculate and ready for you to enjoy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Palette & Inspiration Section -->
+    <section class="section palette" id="palette">
+        <div class="container">
+            <h2 class="section-title">Palette & Inspiration</h2>
+            
+            <div class="color-swatches">
+                <div class="color-swatch" style="background-color: #3a6ea5;" data-color="#3a6ea5">
+                    <div class="color-name">Ocean Blue</div>
+                </div>
+                <div class="color-swatch" style="background-color: #00b4a6;" data-color="#00b4a6">
+                    <div class="color-name">Teal Dream</div>
+                </div>
+                <div class="color-swatch" style="background-color: #ff6b6b;" data-color="#ff6b6b">
+                    <div class="color-name">Coral Sunset</div>
+                </div>
+                <div class="color-swatch" style="background-color: #f9c74f;" data-color="#f9c74f">
+                    <div class="color-name">Golden Hour</div>
+                </div>
+                <div class="color-swatch" style="background-color: #8a4fff;" data-color="#8a4fff">
+                    <div class="color-name">Royal Purple</div>
+                </div>
+                <div class="color-swatch" style="background-color: #1a1a1a;" data-color="#1a1a1a">
+                    <div class="color-name">Midnight</div>
+                </div>
+                <div class="color-swatch" style="background-color: #f8f8f8;" data-color="#f8f8f8">
+                    <div class="color-name">Cloud White</div>
+                </div>
+                <div class="color-swatch" style="background-color: #2a9d8f;" data-color="#2a9d8f">
+                    <div class="color-name">Forest Green</div>
+                </div>
+            </div>
+            
+            <div class="before-after">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Transformation Gallery</h3>
+                <div class="slider-container">
+                    <img src="https://picsum.photos/seed/after-living-room/1200/600.jpg" alt="After transformation" class="slider-image">
+                    <div class="slider-overlay">
+                        <img src="https://picsum.photos/seed/before-living-room/1200/600.jpg" alt="Before transformation" class="slider-image">
+                    </div>
+                    <div class="slider-handle"></div>
+                </div>
+            </div>
+            
+            <div class="mood-mixer">
+                <h3>Mood Mixer</h3>
+                <p style="text-align: center; margin-bottom: 1.5rem;">Combine colors to create your perfect palette</p>
+                
+                <div class="mixer-controls">
+                    <div class="mixer-color" style="background-color: #3a6ea5;" data-mixer-color="#3a6ea5"></div>
+                    <div class="mixer-color" style="background-color: #00b4a6;" data-mixer-color="#00b4a6"></div>
+                    <div class="mixer-color" style="background-color: #ff6b6b;" data-mixer-color="#ff6b6b"></div>
+                    <div class="mixer-color" style="background-color: #f9c74f;" data-mixer-color="#f9c74f"></div>
+                    <div class="mixer-color" style="background-color: #8a4fff;" data-mixer-color="#8a4fff"></div>
+                </div>
+                
+                <div class="mixer-result" id="mixerResult">
+                    Select colors above to see your palette
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Voices</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Working with Transform was an absolute delight. They didn't just paint our walls—they brought our vision to life with such artistry and care. Our home feels completely new.</p>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/client1/100/100.jpg" alt="Sarah Johnson" class="author-image">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Homeowner</p>
+                        </div>
+                    </div>
+                    <div class="audio-testimonial">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="sound-wave paused">
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The attention to detail was incredible. From the initial consultation to the final brushstroke, every step was handled with professionalism and genuine passion for their craft.</p>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/client2/100/100.jpg" alt="Michael Chen" class="author-image">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Restaurant Owner</p>
+                        </div>
+                    </div>
+                    <div class="audio-testimonial">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="sound-wave paused">
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Our office transformation has had a remarkable impact on our team's morale and productivity. The colors and finish create an environment that inspires creativity and collaboration.</p>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/client3/100/100.jpg" alt="Emma Rodriguez" class="author-image">
+                        <div class="author-info">
+                            <h4>Emma Rodriguez</h4>
+                            <p>Creative Director</p>
+                        </div>
+                    </div>
+                    <div class="audio-testimonial">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="sound-wave paused">
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                            <div class="sound-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Your Space Section -->
+    <section class="section your-space" id="your-space">
+        <div class="container">
+            <h2 class="section-title">Your Space, Your Story</h2>
+            
+            <div class="vision-builder">
+                <h3>Build Your Vision Board</h3>
+                <p style="text-align: center; margin-bottom: 1.5rem;">Click on images below to add to your inspiration board</p>
+                
+                <div class="inspiration-gallery">
+                    <div class="inspiration-item">
+                        <img src="https://picsum.photos/seed/inspiration1/300/300.jpg" alt="Modern living room">
+                        <div class="overlay">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="inspiration-item">
+                        <img src="https://picsum.photos/seed/inspiration2/300/300.jpg" alt="Cozy bedroom">
+                        <div class="overlay">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="inspiration-item">
+                        <img src="https://picsum.photos/seed/inspiration3/300/300.jpg" alt="Elegant dining room">
+                        <div class="overlay">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="inspiration-item">
+                        <img src="https://picsum.photos/seed/inspiration4/300/300.jpg" alt="Bright kitchen">
+                        <div class="overlay">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="inspiration-item">
+                        <img src="https://picsum.photos/seed/inspiration5/300/300.jpg" alt="Home office">
+                        <div class="overlay">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="inspiration-item">
+                        <img src="https://picsum.photos/seed/inspiration6/300/300.jpg" alt="Bathroom oasis">
+                        <div class="overlay">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="vision-form">
+                <h3 style="margin-bottom: 1.5rem;">Tell Us About Your Vision</h3>
+                <form id="visionForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="First and last name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                        </div>
+                        <div class="form-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" name="project-type">
+                                <option value="">Select a project type</option>
+                                <option value="interior">Interior Painting</option>
+                                <option value="exterior">Exterior Painting</option>
+                                <option value="both">Interior & Exterior</option>
+                                <option value="commercial">Commercial Space</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="timeline">Desired Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">When would you like to start?</option>
+                            <option value="asap">As soon as possible</option>
+                            <option value="1-month">Within 1 month</option>
+                            <option value="2-months">Within 2 months</option>
+                            <option value="3-months">Within 3 months</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vision">Describe Your Vision</label>
+                        <textarea id="vision" name="vision" rows="4" placeholder="Tell us about your space, your style preferences, and what you hope to achieve..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Share Your Vision</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final Invitation Section -->
+    <section class="section invitation" id="invitation">
+        <div class="container">
+            <div class="invitation-content">
+                <h2>Begin Your Transformation</h2>
+                <p>Every great space starts with a vision and the right partners to bring it to life. Let's create something beautiful together.</p>
+                
+                <div class="benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Expert Craftsmanship</h3>
+                        <p>Skilled artists with attention to every detail</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Eco-Friendly</h3>
+                        <p>Sustainable materials and practices</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Satisfaction Guaranteed</h3>
+                        <p>We stand behind our work 100%</p>
+                    </div>
+                </div>
+                
+                <div class="calendar-booking">
+                    <h3>Schedule Your Consultation</h3>
+                    <p>Book a free consultation with our design team to discuss your project and receive a personalized quote.</p>
+                    <a href="#" class="btn" id="bookConsultation">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Transform</h3>
+                    <p>Professional painting services that transform your space into a reflection of your unique story.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Interior Painting</a></li>
+                        <li><a href="#">Exterior Painting</a></li>
+                        <li><a href="#">Commercial Painting</a></li>
+                        <li><a href="#">Color Consultation</a></li>
+                        <li><a href="#">Wallpaper Removal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#journey">Our Story</a></li>
+                        <li><a href="#craft">Our Process</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Art Street, Creative City, CA 90210</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> hello@transformpainting.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-5pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Transform Painting Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Email Capture Modal -->
+    <div class="email-modal" id="emailModal">
+        <div class="email-modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Get Your Free Color Inspiration Guide</h2>
+            <p>Subscribe to our newsletter and receive a comprehensive guide to choosing the perfect colors for your space.</p>
+            <form id="emailForm">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Download Guide</button>
+            </form>
+        </div>
+    </div>
+     <script>
+        // Page Loading
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const loadingScreen = document.getElementById('loadingScreen');
+                loadingScreen.style.opacity = '0';
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 3000);
+        });
+        
+        // Navigation
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navbar = document.getElementById('navbar');
+        
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Hero headline animation
+        const heroHeadline = document.getElementById('heroHeadline');
+        const paintStroke = document.getElementById('paintStroke');
+        const headlineSpans = heroHeadline.querySelectorAll('span');
+        
+        setTimeout(() => {
+            headlineSpans.forEach((span, index) => {
+                setTimeout(() => {
+                    span.style.opacity = '1';
+                    span.style.transform = 'translateY(0)';
+                    span.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                }, index * 300);
+            });
+            
+            // Paint stroke animation
+            setTimeout(() => {
+                paintStroke.style.width = '100%';
+                paintStroke.style.transition = 'width 1.5s ease';
+            }, 800);
+            
+            // Animate subtitle and CTA
+            setTimeout(() => {
+                document.querySelector('.hero-subtitle').style.opacity = '1';
+                document.querySelector('.hero-subtitle').style.transform = 'translateY(0)';
+                document.querySelector('.hero-subtitle').style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                
+                document.querySelector('.hero-cta').style.opacity = '1';
+                document.querySelector('.hero-cta').style.transform = 'translateY(0)';
+                document.querySelector('.hero-cta').style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            }, 1200);
+        }, 3500);
+        
+        // Timeline animation
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+                }
+            });
+        }, { threshold: 0.2 });
+        
+        timelineItems.forEach(item => {
+            timelineObserver.observe(item);
+        });
+        
+        // Scratch-off effect
+        const scratchOverlays = document.querySelectorAll('.scratch-overlay');
+        
+        scratchOverlays.forEach(overlay => {
+            overlay.addEventListener('click', function() {
+                this.style.opacity = '0';
+                this.style.transition = 'opacity 1s ease';
+            });
+        });
+        
+        // Process steps animation
+        const processSteps = document.querySelectorAll('.process-step');
+        
+        const processObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+                }
+            });
+        }, { threshold: 0.2 });
+        
+        processSteps.forEach(step => {
+            processObserver.observe(step);
+        });
+        
+        // Hotspot tooltips
+        const hotspots = document.querySelectorAll('.process-hotspot');
+        
+        hotspots.forEach(hotspot => {
+            const tooltip = document.querySelector('.hotspot-tooltip');
+            
+            hotspot.addEventListener('mouseenter', function() {
+                const tooltipText = this.getAttribute('data-tooltip');
+                tooltip.textContent = tooltipText;
+                tooltip.classList.add('active');
+                
+                // Position tooltip
+                const rect = this.getBoundingClientRect();
+                const tooltipRect = tooltip.getBoundingClientRect();
+                
+                tooltip.style.left = rect.left + (rect.width / 2) - (tooltipRect.width / 2) + 'px';
+                tooltip.style.top = rect.top - tooltipRect.height - 10 + 'px';
+            });
+            
+            hotspot.addEventListener('mouseleave', function() {
+                tooltip.classList.remove('active');
+            });
+        });
+        
+        // Color swatches
+        const colorSwatches = document.querySelectorAll('.color-swatch');
+        
+        colorSwatches.forEach(swatch => {
+            swatch.addEventListener('click', function() {
+                // Remove active class from all swatches
+                colorSwatches.forEach(s => s.classList.remove('active'));
+                
+                // Add active class to clicked swatch
+                this.classList.add('active');
+                
+                // Change page mood based on color
+                const color = this.getAttribute('data-color');
+                document.documentElement.style.setProperty('--accent-blue', color);
+            });
+        });
+        
+        // Before/After Slider
+        const sliderHandle = document.querySelector('.slider-handle');
+        const sliderOverlay = document.querySelector('.slider-overlay');
+        let isDragging = false;
+        
+        sliderHandle.addEventListener('mousedown', function() {
+            isDragging = true;
+        });
+        
+        document.addEventListener('mousemove', function(e) {
+            if (!isDragging) return;
+            
+            const sliderContainer = document.querySelector('.slider-container');
+            const containerRect = sliderContainer.getBoundingClientRect();
+            const position = ((e.clientX - containerRect.left) / containerRect.width) * 100;
+            
+            if (position >= 0 && position <= 100) {
+                sliderHandle.style.left = position + '%';
+                sliderOverlay.style.width = position + '%';
+            }
+        });
+        
+        document.addEventListener('mouseup', function() {
+            isDragging = false;
+        });
+        
+        // Mood Mixer
+        const mixerColors = document.querySelectorAll('.mixer-color');
+        const mixerResult = document.getElementById('mixerResult');
+        let selectedColors = [];
+        
+        mixerColors.forEach(color => {
+            color.addEventListener('click', function() {
+                const colorValue = this.getAttribute('data-mixer-color');
+                
+                if (selectedColors.includes(colorValue)) {
+                    selectedColors = selectedColors.filter(c => c !== colorValue);
+                    this.style.transform = 'scale(1)';
+                    this.style.boxShadow = 'none';
+                } else {
+                    selectedColors.push(colorValue);
+                    this.style.transform = 'scale(1.1)';
+                    this.style.boxShadow = '0 0 0 3px white';
+                }
+                
+                if (selectedColors.length > 0) {
+                    const gradient = `linear-gradient(135deg, ${selectedColors.join(', ')})`;
+                    mixerResult.style.background = gradient;
+                    mixerResult.textContent = 'Your Perfect Palette';
+                } else {
+                    mixerResult.style.background = 'var(--primary-charcoal)';
+                    mixerResult.textContent = 'Select colors above to see your palette';
+                }
+            });
+        });
+        
+        // Testimonials animation
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+        
+        const testimonialObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+                    }, index * 150);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        testimonialCards.forEach(card => {
+            testimonialObserver.observe(card);
+        });
+        
+        // Audio testimonials
+        const playButtons = document.querySelectorAll('.play-button');
+        
+        playButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const soundWave = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (icon.classList.contains('fa-play')) {
+                    icon.classList.remove('fa-play');
+                    icon.classList.add('fa-pause');
+                    soundWave.classList.remove('paused');
+                } else {
+                    icon.classList.remove('fa-pause');
+                    icon.classList.add('fa-play');
+                    soundWave.classList.add('paused');
+                }
+            });
+        });
+        
+        // Vision Board
+        const inspirationItems = document.querySelectorAll('.inspiration-item');
+        const visionBoard = [];
+        
+        inspirationItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imgSrc = this.querySelector('img').getAttribute('src');
+                
+                if (!visionBoard.includes(imgSrc)) {
+                    visionBoard.push(imgSrc);
+                    
+                    // Visual feedback
+                    const overlay = this.querySelector('.overlay');
+                    overlay.innerHTML = '<i class="fas fa-check"></i>';
+                    overlay.style.backgroundColor = 'rgba(0, 180, 166, 0.8)';
+                    
+                    // Show notification
+                    showNotification('Added to your vision board!');
+                } else {
+                    // Remove from vision board
+                    const index = visionBoard.indexOf(imgSrc);
+                    if (index > -1) {
+                        visionBoard.splice(index, 1);
+                    }
+                    
+                    // Visual feedback
+                    const overlay = this.querySelector('.overlay');
+                    overlay.innerHTML = '<i class="fas fa-plus"></i>';
+                    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+                    
+                    // Show notification
+                    showNotification('Removed from your vision board');
+                }
+            });
+        });
+        
+        // Vision Form
+        const visionForm = document.getElementById('visionForm');
+        
+        visionForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const visionData = {};
+            
+            for (let [key, value] of formData.entries()) {
+                visionData[key] = value;
+            }
+            
+            // Add vision board items
+            visionData.inspiration = visionBoard;
+            
+            // Show success message
+            showNotification('Thank you for sharing your vision! We\'ll be in touch soon.');
+            
+            // Reset form
+            this.reset();
+            
+            // Log data (in a real app, this would be sent to a server)
+            console.log('Vision form submitted:', visionData);
+        });
+        
+        // Email Modal
+        const emailModal = document.getElementById('emailModal');
+        const closeModal = document.getElementById('closeModal');
+        const emailForm = document.getElementById('emailForm');
+        
+        // Show email modal after scrolling 50% of the page
+        window.addEventListener('scroll', function() {
+            const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            
+            if (scrollPercentage > 50 && !sessionStorage.getItem('emailModalShown')) {
+                emailModal.classList.add('active');
+                sessionStorage.setItem('emailModalShown', 'true');
+            }
+        });
+        
+        closeModal.addEventListener('click', function() {
+            emailModal.classList.remove('active');
+        });
+        
+        emailForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = this.querySelector('input[type="email"]').value;
+            
+            // Show success message
+            showNotification('Check your email for the color inspiration guide!');
+            
+            // Close modal
+            emailModal.classList.remove('active');
+            
+            // Reset form
+            this.reset();
+            
+            // Log email (in a real app, this would be sent to a server)
+            console.log('Email captured:', email);
+        });
+        
+        // Book Consultation
+        const bookConsultation = document.getElementById('bookConsultation');
+        
+        bookConsultation.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // In a real app, this would open a calendar integration
+            showNotification('Calendar integration coming soon! Please call us at (123) 456-7890 to book.');
+        });
+        
+        // Notification function
+        function showNotification(message) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            
+            // Style notification
+            notification.style.position = 'fixed';
+            notification.style.bottom = '20px';
+            notification.style.right = '20px';
+            notification.style.backgroundColor = 'var(--accent-teal)';
+            notification.style.color = 'white';
+            notification.style.padding = '1rem 1.5rem';
+            notification.style.borderRadius = '5px';
+            notification.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+            notification.style.zIndex = '3000';
+            notification.style.transform = 'translateX(120%)';
+            notification.style.transition = 'transform 0.3s ease';
+            
+            // Add to DOM
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.style.transform = 'translateX(120%)';
+                
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+   
+</body>
+</html>
